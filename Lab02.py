@@ -5,7 +5,7 @@ favorite_color = "Blue"
 
 # part 1 Q 1
 print(name)
-print(aga)
+print(age)
 print(height)
 print(favorite_color)
 # part Q 2
@@ -18,7 +18,7 @@ print(f"My name is: {name} my favorite color {favorite_color} my age is {age} ye
 print(f"My name is: {name} my favorite color {favorite_color} my age is {age} years old {height:^10.1f} my height is")
 
 # part 1 Q 2 P4
-my_multi_line_str_ = """
+my_multi_line_str_ = f"""
 my name is {name}
 my age is {age:d}
 my height is {height:.1f}
@@ -31,7 +31,7 @@ radius = 5
 
 from math import pi
 
-area_circle = math.pi* radius**2
+area_circle = pi* radius**2
 print(round(area_circle, 1))
 print(f"{area_circle:.1f}")
 # part 2 Q 1 & 2
@@ -42,8 +42,8 @@ print(f"{sqrt(area_circle):.2f}")
 # part 2 Q 3
 from math import sin, cos
 
-print(sin(heght))
-print(cos(heght))
+print(sin(height))
+print(cos(height))
 
 # The sum of age and 5.
 print(age +5)
@@ -62,5 +62,5 @@ print(age**2)
 # part 4 Q 1
 f_deg = float(input("Please enter degrees in Fahrenheit: "))
 #  print(f_deg, type(f_deg))
-celsius = (f_deg * 9 / 5 + 32) * 0.55555555555556
+celsius = (f_deg  - 32) * 0.55555555555556
 print(f"{f_deg:.2f}F in celsius is: {celsius:.2f}°C")
